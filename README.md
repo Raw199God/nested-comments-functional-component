@@ -1,16 +1,47 @@
-# React + Vite
+# 🧵 Nested Comments System (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **nested comments system** built using **React** that supports unlimited comment replies, editing, deleting, and persistent storage using `localStorage`.  
+This project demonstrates core React concepts such as **Context API**, **hooks**, and **component-based architecture**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- ✅ Add new comments
+- 🔁 Reply to comments with unlimited nesting
+- ✏️ Edit your own comments
+- 🗑️ Delete your own comments
+- 👤 Username-based ownership control
+- 💾 Persistent data using `localStorage`
+- 🌳 Visual nesting based on reply depth
+- ⚛️ Global state management using React Context
+- 🚀 Fast development setup using Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Concepts Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React Functional Components
+- React Hooks (`useState`, `useEffect`, `useContext`)
+- React Context API
+- Conditional Rendering
+- Controlled Forms
+- Local Storage (`localStorage`)
+- Component Reusability
+
+---
+
+## 🏗️ Project Structure
+src/
+│── components/
+│ ├── Addcomment.jsx
+│ ├── Comment.jsx
+│ ├── CommentSection.jsx
+│ ├── Commenttrans.jsx
+│ ├── ResetCommentSection.jsx
+│
+│── context/
+│ └── CommentsContext.jsx
+│
+│── App.jsx
+│── main.jsx
