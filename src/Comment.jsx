@@ -21,7 +21,7 @@ export default function Comment({id,level,commentvalue,username}) {
                 });
                 let tdel = 0 ;
                 for (let i = idx + 1 ; i < prevcopy.length ;i++){
-                    if(Comments[i].level == level){
+                    if(Comments[i].level <= level){
                         break ;
                     }
                     else{
