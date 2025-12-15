@@ -14,7 +14,7 @@ export default function CommentSection({ level }) {
       <div className="commentsection">
         <div className="buttoncont">
           <Addcomment name="Add Comment" level={level} />
-          <ResetCommentSection />
+          {(localStorage.getItem('username')=='Admin')?<ResetCommentSection />:<></>}
         </div>
         {Comments.map(({ id, level, commentvalue, username }) => {
           if (commentvalue) {
