@@ -1,0 +1,61 @@
+body{
+  padding-top: 100px;
+}
+button{
+  background-color: rgb(184, 157, 226);
+  margin-inline-end: 10px;
+  border-radius: 4px;
+  border: solid 1px black ;
+}
+button:hover{
+  background-color: rgba(113, 46, 237, 0.329);
+}
+.commentsection{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.buttoncont{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+.comment{
+  background-color: rgb(205, 204, 204);
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  width: 100%;
+  margin-block: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.imgcontainer{
+  min-width: 50px;
+  height: 100%;
+}
+.commentbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 10px;
+  width:100%
+}
+.commentvalue{
+  overflow: hidden;
+  margin-bottom: 10px;
+  color: rgb(56, 105, 48);
+}
+form{
+  display: flex ;
+  flex-direction: column;
+  height: 100%;
+}
+.entercomment{
+  overflow: hidden;
+  margin-bottom: 10px;
+  color: rgb(56, 105, 48);
+  width: 90%;
+  height: 100%;
+}
